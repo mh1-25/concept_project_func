@@ -12,10 +12,10 @@ namespace functionalconcept.Project
         {
             foreach(var records in raw)
             {
-                Region = StandardizeRegion(records.Region);
-                Sales = StandardizeSales(records.Sales);
-                Date = StandardizeDate(records.Date);
-                Growth = records.Growt;
+                StandardizeRegion(records.Region);
+                StandardizeSales(records.Sales);
+                StandardizeDate(records.Date);
+                records.Growth;
             }
         }
         private static string StandardizeRegion(string region)
